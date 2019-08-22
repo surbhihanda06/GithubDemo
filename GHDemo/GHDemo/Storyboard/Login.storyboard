@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="vIx-kw-vPs">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YAX-YD-bRh" customClass="LoginViewController" customModule="GHDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hpT-2D-DBl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jYB-ig-asz">
+                                <rect key="frame" x="0.0" y="20" width="375" height="564"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="git_header" id="hMl-TX-bPw">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="316"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <connections>
+                                    <outlet property="dataSource" destination="YAX-YD-bRh" id="kgp-TQ-6l8"/>
+                                    <outlet property="delegate" destination="YAX-YD-bRh" id="JHk-D8-teo"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C60-39-dKC">
+                                <rect key="frame" x="60" y="594" width="255" height="43"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="C60-39-dKC" secondAttribute="height" multiplier="59:10" id="T62-5C-w1P"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="r53-Qj-c3k"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerradius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnLogin:" destination="YAX-YD-bRh" eventType="touchUpInside" id="dME-wr-Gxl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C60-39-dKC" firstAttribute="trailing" secondItem="ugB-AG-3m3" secondAttribute="trailing" constant="-60" id="8jJ-er-YDW"/>
+                            <constraint firstItem="C60-39-dKC" firstAttribute="top" secondItem="jYB-ig-asz" secondAttribute="bottom" constant="10" id="CjO-N4-EgQ"/>
+                            <constraint firstItem="C60-39-dKC" firstAttribute="bottom" secondItem="ugB-AG-3m3" secondAttribute="bottom" constant="-30" id="GyF-VZ-DSU"/>
+                            <constraint firstItem="jYB-ig-asz" firstAttribute="top" secondItem="ugB-AG-3m3" secondAttribute="top" id="ODg-am-c9B"/>
+                            <constraint firstItem="jYB-ig-asz" firstAttribute="trailing" secondItem="ugB-AG-3m3" secondAttribute="trailing" id="Qhm-8c-zLR"/>
+                            <constraint firstItem="jYB-ig-asz" firstAttribute="leading" secondItem="ugB-AG-3m3" secondAttribute="leading" id="RQS-oo-nnQ"/>
+                            <constraint firstItem="C60-39-dKC" firstAttribute="leading" secondItem="ugB-AG-3m3" secondAttribute="leading" constant="60" id="bcW-vL-Wbn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ugB-AG-3m3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gES-zb-7if"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="C60-39-dKC" id="rS5-8k-k5i"/>
+                        <outlet property="tableView" destination="jYB-ig-asz" id="9gp-XE-iOe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6N3-Fo-5BF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-668" y="-15"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="git_header" width="842.66668701171875" height="421.33334350585938"/>
+    </resources>
+</document>

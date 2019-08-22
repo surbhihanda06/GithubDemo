@@ -1,0 +1,6 @@
+framework module Pods_GHDemo {
+  umbrella header "Pods-GHDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
