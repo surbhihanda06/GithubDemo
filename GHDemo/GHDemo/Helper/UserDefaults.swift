@@ -9,7 +9,6 @@
 import Foundation
 
 /*default methods to save app data in preferences*/
-
 extension UserDefaults {
     
     // return default login status

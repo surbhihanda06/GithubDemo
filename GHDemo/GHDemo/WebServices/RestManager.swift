@@ -34,13 +34,12 @@ class RestManager<T: Codable> {
                 return
             }
             
-            /*HTTP REQUEST*/
+            /*HTTP REQUEST (for debugging)*/
             /*************************************************/
-            print("url: \(url)")
-            print("method: \(httpMethod.rawValue)")
-            print("HTTPHeaders: \(request.allHTTPHeaderFields ?? [:])")
-            print("parameters:\(params)")
-
+//            print("url: \(url)")
+//            print("method: \(httpMethod.rawValue)")
+//            print("HTTPHeaders: \(request.allHTTPHeaderFields ?? [:])")
+//            print("parameters:\(params)")
             /*************************************************/
             
             let sessionConfiguration = URLSessionConfiguration.default
@@ -60,7 +59,7 @@ class RestManager<T: Codable> {
                     /*RESPONSE*/
                     /***********************************************/
                     if let data = data, let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers)  {
-                        print("response: \(json)")
+                        //print("response: \(json)")
                         if let result = json as? [String:Any] {
                             self.response = result
                         }
@@ -136,7 +135,6 @@ class RestManager<T: Codable> {
                 queryParameters += "&"
             })
             queryParameters.removeLast()
-            
             let urlString = urlRequest.url!.absoluteString + queryParameters
             urlRequest.url = URL(string: urlString)
         default:

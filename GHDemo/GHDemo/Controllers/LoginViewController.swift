@@ -102,8 +102,8 @@ class LoginViewController: FormViewController, ActivityIndicatorViewable {
         self.showloader()
         let rest = RestManager<OAuth>()
         rest.requestHttpHeaders["x-github-otp"] = code
-        let params = ["client_id": "3950305f68a264794e74",
-                      "client_secret": "bbdc87f574be69b7bb20bc421d3a9f930c1fcf53",
+        let params = ["client_id": Config.KCLIENT_ID,
+                      "client_secret": Config.KCLIENT_SECRET,
                       "scopes": ["repo"],
                       "note": "admin script"] as [String : Any]
         rest.makeRequest(toURL: API.authorizations.endPoint, params: params, withHttpMethod: .post) { [weak self] (result) in

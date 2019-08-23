@@ -22,6 +22,7 @@
 		CE67BEC622FD7EE600E138B8 /* GHDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67BEC522FD7EE600E138B8 /* GHDemoTests.swift */; };
 		CE67BED122FD7EE600E138B8 /* GHDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67BED022FD7EE600E138B8 /* GHDemoUITests.swift */; };
 		CE72F0572303E13400E13005 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72F0562303E13400E13005 /* ProfileViewController.swift */; };
+		CE7EF1CB2310004C00B0DE38 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7EF1CA2310004C00B0DE38 /* Config.swift */; };
 		CE918692230BE661006B9CBE /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE918691230BE661006B9CBE /* RepositoriesViewController.swift */; };
 		CE918697230C12E1006B9CBE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE178F11230AE048005C3C1B /* DetailViewController.swift */; };
 		CE918698230C12E6006B9CBE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE918695230C10F3006B9CBE /* WebViewController.swift */; };
@@ -102,6 +103,7 @@
 		CE67BED022FD7EE600E138B8 /* GHDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHDemoUITests.swift; sourceTree = "<group>"; };
 		CE67BED222FD7EE600E138B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE72F0562303E13400E13005 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CE7EF1CA2310004C00B0DE38 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		CE918691230BE661006B9CBE /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
 		CE918695230C10F3006B9CBE /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		CE918699230C1337006B9CBE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -307,6 +309,7 @@
 				CEE496F92302DBA2004EC742 /* RootNavigator.swift */,
 				CE445352230D107500F388E4 /* SearchManager.swift */,
 				CE9D38D8230EAE3D00834CC7 /* Storyboards.swift */,
+				CE7EF1CA2310004C00B0DE38 /* Config.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 			files = (
 				CE9D38E4230ED7DB00834CC7 /* APIEndPoints.swift in Sources */,
 				CED76B712304168E00AC18CB /* SearchViewController.swift in Sources */,
+				CE7EF1CB2310004C00B0DE38 /* Config.swift in Sources */,
 				CE5626DA230D5AB100F8F06A /* Toast.swift in Sources */,
 				CE918698230C12E6006B9CBE /* WebViewController.swift in Sources */,
 				CE9D38D9230EAE3D00834CC7 /* Storyboards.swift in Sources */,

@@ -20,13 +20,13 @@ enum Storyboard: String {
     case Home
     
     func initiate<T: UIViewController>(_ controller: T.Type) -> T {
-        let storyboard = UIStoryboard.init(name: rawValue, bundle: nil)
+        let storyboard = UIStoryboard(name: rawValue, bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "\(controller)")
         return controller as! T
     }
     
     func initialViewController() -> UIViewController {
-        let storyboard = UIStoryboard.init(name: rawValue, bundle: nil)
+        let storyboard = UIStoryboard(name: rawValue, bundle: nil)
         return storyboard.instantiateInitialViewController()!
     }
  }
@@ -36,3 +36,4 @@ extension UIViewController {
         return storyboard.initiate(self)
     }
 }
+
